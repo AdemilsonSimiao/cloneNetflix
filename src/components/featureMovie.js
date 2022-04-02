@@ -8,8 +8,7 @@ export default ({item}) => {
     for(let i in item.genres) {
         genres.push(item.genres[i].name);
     }
-
-    return (
+        return (
         <section className="featured" style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center',

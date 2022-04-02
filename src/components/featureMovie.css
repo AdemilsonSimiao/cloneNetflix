@@ -38,6 +38,13 @@
     font-size: 20px;
     color: #999;
     max-width: 40%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.featured--description:hover{
+    white-space: inherit;
+    text-overflow: clip;
 }
 .featured--buttons{
     margin-top: 15px;
@@ -67,4 +74,29 @@
     margin-top: 15px;
     color: #999;
     font-size: 18px;
+}
+
+@media (max-width: 760px){
+    .featured{
+        height: 80vh;
+    }
+    .featured--name{
+        font-size: 40px;
+    }
+    .featured--info{
+        font-size: 16px;
+    }
+    .featured--description{
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+        text-overflow: ellipsis;
+    }
+    .featured--watchbuttons,
+    .featured--mylistbuttons{
+        font-size: 16px;
+    }
+    .featured--genres{
+        font-size: 14px;
+    }
 }
